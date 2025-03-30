@@ -15,10 +15,10 @@ symbols in full-text search.
 # Extension Build/Usage Example
 
 ```sh
-cargo rustc --features extension -- --crate-type=cdylib
+cargo build --features extension --release
 ```
 
-Load extension from `./target/release/libsignal_tokenizer.dylib`.
+Load extension from `./target/release/libsignal_tokenizer`.
 
 ```sql
 CREATE VIRTUAL TABLE
